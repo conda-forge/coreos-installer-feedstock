@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: "coreos-installer"
-  version: "0.25.0"
+  version: "0.26.0"
 
 package:
   name: coreos-installer
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/coreos/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 4a62a06c4eb3ec443bb30f135338e034da206793881425fe43f0343ec90649f2
+  sha256: 793c7e2a1021be6824b62392cc7dea267161767ffed078561c7d8a2e61f817cc
 
 build:
   number: 0
