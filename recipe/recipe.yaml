@@ -23,8 +23,9 @@ build:
       OPENSSL_STATIC: "0"
       ZSTD_SYS_USE_PKG_CONFIG: "0"
     content:
+      - cd coreos-installer-${{ version }}
       - cargo auditable install --features rdcore --offline --no-track --bins --root ${{ PREFIX }} --path .
-      - cargo-bundle-licenses --format yaml --output ./THIRDPARTY.yml
+      - cargo-bundle-licenses --format yaml --output $SRC_DIR/THIRDPARTY.yml
 
 requirements:
   build:
