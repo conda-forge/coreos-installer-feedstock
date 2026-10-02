@@ -9,8 +9,8 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://github.com/coreos/${{ name }}/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: f4a85fb8cd6e737f5a932eb99eda2b74417a3ca3a68ebed890fb8a5b0c092ad1
+  url: https://crates.io/api/v1/crates/${{ name }}/${{ version }}/download
+  sha256: 03ba6fb953bda18297294f20057d121edd954d263b049c28884a2a88035dfaca
 
 build:
   number: 1
