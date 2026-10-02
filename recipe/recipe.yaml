@@ -25,7 +25,7 @@ build:
     content:
       - tar -xzf $SRC_DIR/download --strip-components=1 -C $SRC_DIR
       - cd $SRC_DIR
-      - cargo auditable install --features rdcore --offline --no-track --bins --root ${{ PREFIX }} --path .
+      - cargo auditable install --features rdcore --no-track --bins --root ${{ PREFIX }} --path .
       - cargo-bundle-licenses --format yaml --output $SRC_DIR/THIRDPARTY.yml
 
 requirements:
